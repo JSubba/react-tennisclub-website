@@ -1,0 +1,64 @@
+@import "../variable.scss";
+
+.contact {
+  .contact-row {
+    @include flex();
+
+    .left-col {
+      flex-basis: 40em;
+
+      form {
+        display: flex;
+        flex-direction: column;
+        margin: 1.5em 0 3em;
+
+        input {
+          padding: 0.7em;
+          margin: 0.3em 0;
+          outline: none;
+          box-shadow: none;
+          cursor: pointer;
+        }
+
+        .btn-box {
+          .button {
+            margin: 1em 0;
+          }
+
+          p {
+            i {
+              font-size: 1.8em;
+              color: $darkTeal-color;
+              padding: 0.5em;
+
+              &:first-child {
+                padding-left: 0;
+              }
+
+              &:hover {
+                @include flash();
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .right-col {
+      flex-basis: 40em;
+
+      img {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        border: none;
+        border-radius: 50%;
+
+        @media (max-width: $large-screen) {
+          width: 100%;
+          margin-top: 1em;
+        }
+      }
+    }
+  }
+}

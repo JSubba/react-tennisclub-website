@@ -1,13 +1,22 @@
-import "./App.css";
+import React from "react";
+import Navbar from "./components/Navbar";
+import About from "./components/About";
+import Feature from "./components/Feature";
+import Plan from "./components/Plan";
+import Coach from "./components/Coach";
+import Contact from "./components/Contact";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className="App">
-      <h1>Tennis Website</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-        fugiat sit, architecto error esse sequi.
-      </p>
+      <Navbar />
+      <About />
+      <Feature />
+      <Plan />
+      <Coach />
+      <Contact />
+      <Footer />
     </div>
   );
 }

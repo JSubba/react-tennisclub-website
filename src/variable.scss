@@ -1,0 +1,39 @@
+$black-color: #252525;
+$white-color: #f5f5f5;
+$lightShade-color: #e6f8f8;
+$teal-color: #03a7a7;
+$darkTeal-color: #037474;
+$small-screen: 575px;
+$medium-screen: 768px;
+$large-screen: 990px;
+$extraLarge-screen: 1200px;
+
+@mixin flash {
+  animation: flash;
+  animation-duration: 1s;
+}
+
+@mixin pulse {
+  animation: flash;
+  animation-duration: 1s;
+}
+
+@mixin flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+@mixin card {
+  background-color: $white-color;
+  border: 2px solid $darkTeal-color;
+  border-radius: 0.5em;
+  padding: 2em 1em;
+  margin: 1em 0;
+  transition: transform 0.5s ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}

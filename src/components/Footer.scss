@@ -1,0 +1,67 @@
+@import "../variable.scss";
+
+.footer {
+  background-color: $darkTeal-color;
+
+  .container {
+    padding: 2em 5em;
+
+    .footer-links {
+      @include flex();
+      flex-wrap: wrap;
+
+      @media (max-width: $small-screen) {
+        justify-content: space-between;
+      }
+
+      .link-title {
+        h4 {
+          color: $lightShade-color;
+        }
+
+        small a {
+          color: $lightShade-color;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+
+  hr {
+    width: 100%;
+    border: 1px solid $white-color;
+  }
+
+  .footer-info {
+    width: 100%;
+    padding: 1em 0 1.5em;
+
+    .copyright-text {
+      @include flex();
+      justify-content: center;
+      position: relative;
+
+      span {
+        color: $white-color;
+
+        i {
+          font-size: 1.8em;
+        }
+      }
+
+      a {
+        color: $white-color;
+        position: absolute;
+        right: 0.5em;
+
+        i:hover {
+          @include flash();
+        }
+
+        i {
+          font-size: 3em;
+        }
+      }
+    }
+  }
+}
