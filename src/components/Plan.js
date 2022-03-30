@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Plan.scss";
 import PlanImage from "../assets/plan.png";
 
@@ -17,16 +18,22 @@ const Plan = () => {
               recusandae labore voluptatum! Odio at assumenda beatae dicta magni
               saepe suscipit amet dolorem perspiciatis reiciendis. consectetur
               adipisicing elit. A ipsum recusandae labore voluptatum! Odio at
-              assumenda beatae dicta magni saepe suscipit amet dolorem
-              perspiciatis!
+              consectetur adipisicing elit assumenda beatae dicta magni saepe
+              suscipit amet dolorem perspiciatis!
+            </p>
+            <p>
+              Odio at consectetur adipisicing elit assumenda beatae dicta magni
+              saepe suscipit amet dolorem perspiciatis!
             </p>
           </div>
           <button className="button">
-            <a href="#header">Find Out More</a>
+            <Link to="navbar" smooth={true} duration={1000}>
+              Find Out More
+            </Link>
           </button>
         </div>
         <div className="right-col">
-          <img src={PlanImage} alt="plans image" />
+          <img src={PlanImage} alt="plans" />
         </div>
       </div>
     </div>

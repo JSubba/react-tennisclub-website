@@ -1,6 +1,8 @@
 @import "../variable.scss";
 
 .contact {
+  padding: 3em 0;
+
   .contact-row {
     @include flex();
 
@@ -22,11 +24,11 @@
 
         .btn-box {
           .button {
-            margin: 1em 0;
+            margin: 1em 0 2em;
           }
 
           p {
-            i {
+            a {
               font-size: 1.8em;
               color: $darkTeal-color;
               padding: 0.5em;
@@ -54,8 +56,8 @@
         border: none;
         border-radius: 50%;
 
-        @media (max-width: $large-screen) {
-          width: 100%;
+        @media (max-width: $medium-screen) {
+          width: 70%;
           margin-top: 1em;
         }
       }

@@ -1,6 +1,8 @@
 @import "../variable.scss";
 
 .plans {
+  padding: 3em 0;
+
   .plan-row {
     @include flex();
 

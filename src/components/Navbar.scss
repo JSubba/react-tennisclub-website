@@ -8,10 +8,11 @@
   background-size: cover;
 
   .logo {
-    margin: 5em;
-    width: 6em;
+    margin: 4.5em;
+    width: 5em;
 
     @media (max-width: $medium-screen) {
+      margin: 5em;
       width: 4em;
     }
   }
@@ -57,10 +58,17 @@
     transition: 0.8s;
 
     li {
-      margin: 4em 7em;
+      margin: 7em 7.5em;
+      cursor: pointer;
 
       a {
         color: $white-color;
+
+        &:hover {
+          font-weight: bold;
+          border-bottom: 1px solid $darkTeal-color;
+          @include flash;
+        }
       }
     }
   }
@@ -77,12 +85,12 @@
     z-index: 2;
     cursor: pointer;
 
-    @media (max-width: $medium-screen) {
-      width: 4em;
-    }
+    // @media (max-width: $medium-screen) {
+    //   width: 4em;
+    // }
 
     .icons {
-      font-size: 2.5em;
+      font-size: 4em;
       color: $white-color;
     }
   }

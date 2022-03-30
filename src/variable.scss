@@ -14,8 +14,8 @@ $extraLarge-screen: 1200px;
 }
 
 @mixin pulse {
-  animation: flash;
-  animation-duration: 1s;
+  animation: pulse;
+  animation-duration: 2s;
 }
 
 @mixin flex {

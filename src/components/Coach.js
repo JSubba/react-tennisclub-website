@@ -6,12 +6,12 @@ import Coach3 from "../assets/coach3.png";
 
 const Coach = () => {
   return (
-    <div id="coaches" class="coaches">
-      <div class="container">
+    <div id="coaches" className="coaches">
+      <div className="container">
         <h1>Meet Our Coaches</h1>
-        <div class="coach-row">
-          <div class="coach-col">
-            <img src={Coach1} alt="coach image" />
+        <div className="coach-row">
+          <div className="coach-col">
+            <img src={Coach1} alt="coach" />
             <h2>Beverly Hanson</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
@@ -19,8 +19,8 @@ const Coach = () => {
               perferendis veritatis. Commodi harum aperiam numquam molestias!
             </p>
           </div>
-          <div class="coach-col">
-            <img src={Coach2} alt="coach image" />
+          <div className="coach-col">
+            <img src={Coach2} alt="coach" />
             <h2>Taro Mitsubishi</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
@@ -28,8 +28,8 @@ const Coach = () => {
               perferendis veritatis. Commodi harum aperiam numquam molestias!
             </p>
           </div>
-          <div class="coach-col">
-            <img src={Coach3} alt="coach image" />
+          <div className="coach-col">
+            <img src={Coach3} alt="coach" />
             <h2>John Bowen</h2>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti

@@ -8,13 +8,22 @@
 
     .footer-links {
       @include flex();
-      flex-wrap: wrap;
-
-      @media (max-width: $small-screen) {
-        justify-content: space-between;
-      }
 
       .link-title {
+        flex-basis: 20%;
+        text-align: center;
+        border: 1px solid $white-color;
+        padding: 0.5em 0;
+
+        @media (max-width: $small-screen) {
+          flex-basis: 50%;
+          margin: 1em;
+        }
+
+        &:hover {
+          @include pulse;
+        }
+
         h4 {
           color: $lightShade-color;
         }
@@ -22,6 +31,13 @@
         small a {
           color: $lightShade-color;
           font-weight: 500;
+          text-align: left;
+          cursor: pointer;
+
+          &:hover {
+            @include flash;
+            font-weight: 700;
+          }
         }
       }
     }
@@ -40,12 +56,14 @@
       @include flex();
       justify-content: center;
       position: relative;
+      color: $white-color;
 
-      span {
+      sub {
         color: $white-color;
 
-        i {
-          font-size: 1.8em;
+        .icon {
+          font-size: 2em;
+          padding-top: 0.2em;
         }
       }
 
@@ -54,12 +72,12 @@
         position: absolute;
         right: 0.5em;
 
-        i:hover {
+        .arrow-up:hover {
           @include flash();
         }
 
-        i {
-          font-size: 3em;
+        .arrow-up {
+          font-size: 2em;
         }
       }
     }

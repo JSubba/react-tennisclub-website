@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Contact.scss";
 import {
   FaFacebookF,
@@ -10,7 +11,7 @@ import ContactImage from "../assets/contact.png";
 
 const Contact = () => {
   return (
-    <section id="contact" className="contact">
+    <div id="contact" className="contact">
       <div className="container contact-row">
         <div className="left-col">
           <h1>
@@ -24,30 +25,48 @@ const Contact = () => {
             <input type="password" placeholder="password" />
             <div className="btn-box">
               <button className="button">
-                <a href="#header">Start Free Trial</a>
+                <Link to="navbar" smooth={true} duration={1000}>
+                  Start Free Trial
+                </Link>
               </button>
               <p>
-                <a href="https://www.facebook.com" target="_blank">
-                  {FaFacebookF}
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebookF />
                 </a>
-                <a href="https://www.twitter.com" target="_blank">
-                  {FaTwitter}
+                <a
+                  href="https://www.twitter.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaTwitter />
                 </a>
-                <a href="https://www.instagram.com" target="_blank">
-                  {FaInstagramSquare}
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagramSquare />
                 </a>
-                <a href="https://www.linkedin.com" target="_blank">
-                  {FaLinkedinIn}
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedinIn />
                 </a>
               </p>
             </div>
           </form>
         </div>
         <div className="right-col">
-          <img src={ContactImage} alt="contact image" />
+          <img src={ContactImage} alt="contact" />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

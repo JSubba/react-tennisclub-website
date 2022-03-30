@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Feature.scss";
 import { RiStackFill, RiDiscussFill, RiDragMoveFill } from "react-icons/ri";
 
@@ -36,7 +37,9 @@ const Feature = () => {
           </div>
         </div>
         <button className="button">
-          <a href="#contact">Start Free Trial</a>
+          <Link to="contact" smooth={true} duration={1000}>
+            Start Free Trial
+          </Link>
         </button>
       </div>
     </div>

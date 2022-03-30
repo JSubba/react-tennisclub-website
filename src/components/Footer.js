@@ -1,7 +1,8 @@
 import React from "react";
+import { Link } from "react-scroll";
 import "./Footer.scss";
 import { BiTennisBall } from "react-icons/bi";
-import { FiArrowUpCircle } from "react-icons/fi";
+import { FaArrowCircleUp } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -11,41 +12,57 @@ const Footer = () => {
           <div className="link-title">
             <h4>Product</h4>
             <small>
-              <a href="#"> Our Plan</a>
+              <Link to="navbar" smooth={true} duration={1000}>
+                Our Plan
+              </Link>
             </small>
             <br />
             <small>
-              <a href="#">Free Trial</a>
+              <Link to="navbar" smooth={true} duration={1000}>
+                Free Trial
+              </Link>
             </small>
           </div>
           <div className="link-title">
-            <h4>About Us</h4>
+            <h4>about Us</h4>
             <small>
-              <a href="#">Request Demo</a>
+              <Link to="navbar" smooth={true} duration={1000}>
+                Request Demo
+              </Link>
             </small>
             <br />
             <small>
-              <a href="#">Blogs</a>
+              <Link to="navbar" smooth={true} duration={1000}>
+                Blogs
+              </Link>
             </small>
           </div>
           <div className="link-title">
             <h4>Support</h4>
             <small>
-              <a href="#">Features</a>
+              <Link to="navbar" smooth={true} duration={1000}>
+                Features
+              </Link>
             </small>
             <br />
             <small>
-              <a href="#">FAQs</a>
+              <Link to="navbar" smooth={true} duration={1000}>
+                FaQs
+              </Link>
             </small>
           </div>
           <div className="link-title">
             <h4>Explore</h4>
             <small>
-              <a href="#">Find Non-profit</a>
+              <Link to="navbar" smooth={true} duration={1000}>
+                Find Non-profit
+              </Link>
             </small>
             <br />
             <small>
-              <a href="#">Corporate Solution</a>
+              <Link to="navbar" smooth={true} duration={1000}>
+                Corporate Solution
+              </Link>
             </small>
           </div>
         </div>
@@ -55,13 +72,13 @@ const Footer = () => {
 
       <div className="footer-info">
         <div className="copyright-text">
-          <span>
-            <BiTennisBall />
-          </span>
+          <sub>
+            <BiTennisBall className="icon" />
+          </sub>
           <span>ShonanTennis &copy;copyright || 2022</span>
-          <a href="#header">
-            <FiArrowUpCircle />
-          </a>
+          <Link to="navbar" smooth={true} duration={1000}>
+            <FaArrowCircleUp className="arrow-up" />
+          </Link>
         </div>
       </div>
     </div>
