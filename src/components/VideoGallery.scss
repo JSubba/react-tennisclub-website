@@ -1,0 +1,26 @@
+@import "../variable.scss";
+
+.videoGallery {
+  padding: 5em 0 3em;
+  text-align: center;
+  max-width: $extraLarge-screen;
+  margin: 0 auto;
+
+  .carousel {
+    margin: 3em auto 1em;
+
+    .carousel-status {
+      display: none;
+    }
+
+    button {
+      display: none;
+    }
+
+    video {
+      width: 90%;
+      margin: 0 auto;
+      border-radius: 5px;
+    }
+  }
+}

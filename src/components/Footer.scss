@@ -1,85 +1,44 @@
 @import "../variable.scss";
 
 .footer {
-  background-color: $darkTeal-color;
+  background: linear-gradient(to right, rgba(3, 116, 116, 1), rgba(0, 0, 0, 1));
+  padding: 2em 5em 0;
 
-  .container {
-    padding: 2em 5em;
+  .footer-container {
+    @include flex;
+    color: $white-color;
+    max-width: $extraLarge-screen;
+    margin: 0 auto;
 
-    .footer-links {
-      @include flex();
+    .footer-logo img {
+      width: 5em;
+      margin-left: 6em;
+    }
 
-      .link-title {
-        flex-basis: 20%;
-        text-align: center;
-        border: 1px solid $white-color;
-        padding: 0.5em 0;
+    .footer-link-box {
+      @include flex;
 
-        @media (max-width: $small-screen) {
-          flex-basis: 50%;
-          margin: 1em;
-        }
+      .footer-list {
+        margin: 0 3em 4em;
+        padding: 0 3em;
+      }
 
-        &:hover {
-          @include pulse;
-        }
+      li a {
+        color: $white-color;
+        line-height: 1.8;
+        cursor: pointer;
+      }
 
-        h4 {
-          color: $lightShade-color;
-        }
-
-        small a {
-          color: $lightShade-color;
-          font-weight: 500;
-          text-align: left;
-          cursor: pointer;
-
-          &:hover {
-            @include flash;
-            font-weight: 700;
-          }
-        }
+      @media (max-width: $large-screen) {
+        margin-top: 3em;
       }
     }
   }
 
-  hr {
-    width: 100%;
-    border: 1px solid $white-color;
-  }
-
-  .footer-info {
-    width: 100%;
-    padding: 1em 0 1.5em;
-
-    .copyright-text {
-      @include flex();
-      justify-content: center;
-      position: relative;
-      color: $white-color;
-
-      sub {
-        color: $white-color;
-
-        .icon {
-          font-size: 2em;
-          padding-top: 0.2em;
-        }
-      }
-
-      a {
-        color: $white-color;
-        position: absolute;
-        right: 0.5em;
-
-        .arrow-up:hover {
-          @include flash();
-        }
-
-        .arrow-up {
-          font-size: 2em;
-        }
-      }
-    }
+  .copyright {
+    color: $lightShade-color;
+    text-align: center;
+    font-size: 1.2em;
+    opacity: 0.7;
   }
 }

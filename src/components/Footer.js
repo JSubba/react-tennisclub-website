@@ -1,86 +1,131 @@
 import React from "react";
 import { Link } from "react-scroll";
 import "./Footer.scss";
-import { BiTennisBall } from "react-icons/bi";
-import { FaArrowCircleUp } from "react-icons/fa";
+import Logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
     <div id="footer" className="footer">
-      <div className="container">
-        <div className="footer-links">
-          <div className="link-title">
-            <h4>Product</h4>
-            <small>
-              <Link to="navbar" smooth={true} duration={1000}>
-                Our Plan
+      <div className="footer-container">
+        <div className="footer-brand">
+          <a href="#navbar" className="footer-logo">
+            <img src={Logo} alt="logo" />
+          </a>
+          <h1>Tennis Shonan</h1>
+        </div>
+
+        <div className="footer-link-box">
+          <ul className="footer-list">
+            <li>
+              <h3 className="h5 footer-item-title">Company</h3>
+            </li>
+            <li>
+              <Link
+                to="about"
+                className="footer-link"
+                smooth="true"
+                duration={1000}
+              >
+                About Us
               </Link>
-            </small>
-            <br />
-            <small>
-              <Link to="navbar" smooth={true} duration={1000}>
-                Free Trial
-              </Link>
-            </small>
-          </div>
-          <div className="link-title">
-            <h4>about Us</h4>
-            <small>
-              <Link to="navbar" smooth={true} duration={1000}>
-                Request Demo
-              </Link>
-            </small>
-            <br />
-            <small>
-              <Link to="navbar" smooth={true} duration={1000}>
-                Blogs
-              </Link>
-            </small>
-          </div>
-          <div className="link-title">
-            <h4>Support</h4>
-            <small>
-              <Link to="navbar" smooth={true} duration={1000}>
+            </li>
+            <li>
+              <Link
+                to="features"
+                className="footer-link"
+                smooth="true"
+                duration={1000}
+              >
                 Features
               </Link>
-            </small>
-            <br />
-            <small>
-              <Link to="navbar" smooth={true} duration={1000}>
-                FaQs
+            </li>
+            <li>
+              <Link
+                to="videoGallery"
+                className="footer-link"
+                smooth="true"
+                duration={1000}
+              >
+                Videos
               </Link>
-            </small>
-          </div>
-          <div className="link-title">
-            <h4>Explore</h4>
-            <small>
-              <Link to="navbar" smooth={true} duration={1000}>
-                Find Non-profit
+            </li>
+          </ul>
+          <ul className="footer-list">
+            <li>
+              <h3 className="h5 footer-item-title">Products</h3>
+            </li>
+            <li>
+              <Link
+                to="navbar"
+                className="footer-link"
+                smooth="true"
+                duration={1000}
+              >
+                Blog
               </Link>
-            </small>
-            <br />
-            <small>
-              <Link to="navbar" smooth={true} duration={1000}>
-                Corporate Solution
+            </li>
+            <li>
+              <Link
+                to="navbar"
+                className="footer-link"
+                smooth="true"
+                duration={1000}
+              >
+                Help Center
               </Link>
-            </small>
-          </div>
+            </li>
+            <li>
+              <Link
+                to="contact"
+                className="footer-link"
+                smooth="true"
+                duration={1000}
+              >
+                Contact
+              </Link>
+            </li>
+          </ul>
+          <ul className="footer-list">
+            <li>
+              <h3 className="h5 footer-item-title">Resources</h3>
+            </li>
+            <li>
+              <Link
+                to="navbar"
+                className="footer-link"
+                smooth="true"
+                duration={1000}
+              >
+                FAQ’S
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="navbar"
+                className="footer-link"
+                smooth="true"
+                duration={1000}
+              >
+                Testimonial
+              </Link>
+            </li>
+            <li>
+              <Link
+                to="navbar"
+                className="footer-link"
+                smooth="true"
+                duration={1000}
+              >
+                Terms&Cond.
+              </Link>
+            </li>
+          </ul>
         </div>
       </div>
 
-      <hr />
-
-      <div className="footer-info">
-        <div className="copyright-text">
-          <sub>
-            <BiTennisBall className="icon" />
-          </sub>
-          <span>ShonanTennis &copy;copyright || 2022</span>
-          <Link to="navbar" smooth={true} duration={1000}>
-            <FaArrowCircleUp className="arrow-up" />
-          </Link>
-        </div>
-      </div>
+      <p className="copyright">
+        &copy; Copyrights 2022 TennisShonan || All rights reserved.
+      </p>
     </div>
   );
 };

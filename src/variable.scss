@@ -3,7 +3,8 @@ $white-color: #f5f5f5;
 $lightShade-color: #e6f8f8;
 $teal-color: #03a7a7;
 $darkTeal-color: #037474;
-$small-screen: 575px;
+$extraSmall-screen: 375px;
+$small-screen: 576px;
 $medium-screen: 768px;
 $large-screen: 990px;
 $extraLarge-screen: 1200px;
@@ -24,6 +25,7 @@ $extraLarge-screen: 1200px;
   justify-content: space-around;
   align-items: center;
 }
+
 @mixin card {
   background-color: $white-color;
   border: 2px solid $darkTeal-color;

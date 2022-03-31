@@ -37,7 +37,7 @@ const Feature = () => {
           </div>
         </div>
         <button className="button">
-          <Link to="contact" smooth={true} duration={1000}>
+          <Link to="contact" smooth="true" duration={1000}>
             Start Free Trial
           </Link>
         </button>

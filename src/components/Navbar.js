@@ -13,8 +13,9 @@ const Navbar = () => {
 
   return (
     <div id="navbar" className="navbar">
-      <img src={Logo} alt="logo" className="logo" />
       <div className="container">
+        <img src={Logo} alt="logo" className="logo" />
+
         <div className="header-text">
           <h1>
             Best Tennis
@@ -28,7 +29,7 @@ const Navbar = () => {
             Quibusdam incidunt vitae quasi dicta.
           </p>
           <button className="button">
-            <Link to="about" smooth={true} duration={1000}>
+            <Link to="about" smooth="true" duration={1000}>
               Read More
             </Link>
           </button>
@@ -37,32 +38,32 @@ const Navbar = () => {
 
       <ul className={showMenu ? "nav-menu active" : "nav-menu"}>
         <li className="nav-item">
-          <Link to="navbar" smooth={true} duration={1000}>
+          <Link to="navbar" smooth="true" duration={1000}>
             Home
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="about" smooth={true} duration={1000}>
+          <Link to="about" smooth="true" duration={1000}>
             About
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="features" smooth={true} duration={1000}>
+          <Link to="features" smooth="true" duration={1000}>
             Features
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="plans" smooth={true} duration={1000}>
-            Plans
+          <Link to="videoGallery" smooth="true" duration={1000}>
+            Videos
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="coaches" smooth={true} duration={1000}>
+          <Link to="coaches" smooth="true" duration={1000}>
             Coaches
           </Link>
         </li>
         <li className="nav-item">
-          <Link to="contact" smooth={true} duration={1000}>
+          <Link to="contact" smooth="true" duration={1000}>
             Contact
           </Link>
         </li>

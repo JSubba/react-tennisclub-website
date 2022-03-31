@@ -12,7 +12,7 @@ const About = () => {
         </div>
         <div className="right-col">
           <div className="about-text">
-            <h1>About Us</h1>
+            <h1>Tennis Shonan</h1>
             <p>
               Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti
               ipsa maxime earum autem sint ipsam reprehenderit praesentium
@@ -26,7 +26,7 @@ const About = () => {
               ipsa maxime earum autem sint ipsam.
             </p>
             <button className="button">
-              <Link to="navbar" smooth={true} duration={1000}>
+              <Link to="navbar" smooth="true" duration={1000}>
                 Learn More
               </Link>
             </button>

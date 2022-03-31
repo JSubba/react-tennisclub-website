@@ -25,7 +25,7 @@ const Contact = () => {
             <input type="password" placeholder="password" />
             <div className="btn-box">
               <button className="button">
-                <Link to="navbar" smooth={true} duration={1000}>
+                <Link to="navbar" smooth="true" duration={1000}>
                   Start Free Trial
                 </Link>
               </button>
